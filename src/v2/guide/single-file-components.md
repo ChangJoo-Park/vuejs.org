@@ -60,8 +60,6 @@ order: 19
 
 위 내용을 얻으려면 하루정도 걸립니다. 이 후에 [webpack-simple](https://github.com/vuejs-templates/webpack-simple) 을 확인하는 것을 추천합니다. 설명을 따라 가면 `.vue` 컴포넌트, ES2015 및 핫 리로드가 포함된 Vue 프로젝트를 즉시 사용할 수 있게 됩니다.
 
-<<<<<<< HEAD
-=======
 The template uses [Webpack](https://webpack.js.org/), a module bundler that takes a number of "modules" and then bundles them into your final application. To learn more about Webpack itself, [this video](https://www.youtube.com/watch?v=WQue1AN93YU) offers a good intro. Once you get past the basics, you might also want to check out [this advanced Webpack course on Egghead.io](https://egghead.io/courses/using-webpack-for-production-javascript-applications).
 >>>>>>> vuejs/master
 

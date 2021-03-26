@@ -159,7 +159,7 @@ export default {
 }
 ```
 
-이제 `ComponentA`와 `ComponentC 모두 `ComponentB`의 템플릿에서 사용할 수 있습니다.
+이제 `ComponentA`와 `ComponentC` 모두 `ComponentB`의 템플릿에서 사용할 수 있습니다.
 
 
 ### 기본 컴포넌트를 자동으로 전역 등록하기
@@ -235,4 +235,4 @@ requireComponent.keys().forEach(fileName => {
 })
 ```
 
-** 전역 등록은 (`new Vue`로) 루트 Vue 인스턴스가 만들어지기 전에 반드시 이뤄져야 한다는 것**을 기억해주시기 바랍니다. 실제 프로젝트에서 이 패턴이 어떻게 이뤄지는지 [이 예시](https://github.com/chrisvfritz/vue-enterprise-boilerplate/blob/master/src/components/_globals.js)를 참고해주세요.
+** 전역 등록은 (`new Vue`로) 루트 Vue 인스턴스가 만들어지기 전에 반드시 이뤄져야 한다는 것 **을 기억해주시기 바랍니다. 실제 프로젝트에서 이 패턴이 어떻게 이뤄지는지 [이 예시](https://github.com/chrisvfritz/vue-enterprise-boilerplate/blob/master/src/components/_globals.js)를 참고해주세요.

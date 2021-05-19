@@ -453,9 +453,9 @@ function (slotProps) {
 
 ### `slot` 인수를 사용하는 이름이 있는 슬롯
 
-> 2.6.0+ 부터 <abbr title="모든 Vue 2.x 버전에서 지원되고 있으나 사용을 추천하지 않습니다.">지원 중단 예정</abbr>. [여기](#이름이-있는-슬롯(Named-Slots))에서 권장되는 새 문법을 확인하세요.
+> 2.6.0+ 부터 <abbr title="모든 Vue 2.x 버전에서 지원되고 있으나 사용을 추천하지 않습니다.">지원 중단 예정</abbr>. [여기](#이름이-있는-슬롯-Named-Slots)에서 권장되는 새 문법을 확인하세요.
 
-내용물을 부모 컴포넌트에서 이름이 있는 슬롯에 보내려면 `slot` 인수를 `<template>`에서 사용해야 합니다.([여기](#이름이-있는-슬롯(Named-Slots))에서 예시로 사용했던 `<base-layout>` 컴포넌트를 사용하겠습니다.)
+내용물을 부모 컴포넌트에서 이름이 있는 슬롯에 보내려면 `slot` 인수를 `<template>`에서 사용해야 합니다.([여기](#이름이-있는-슬롯-Named-Slots)에서 예시로 사용했던 `<base-layout>` 컴포넌트를 사용하겠습니다.)
 
 ```html
 <base-layout>
@@ -504,9 +504,9 @@ function (slotProps) {
 
 ### `slot-scope` 인수를 사용하는 범위가 있는 슬롯
 
-> 2.6.0+ 부터 <abbr title="모든 Vue 2.x 버전에서 지원되고 있으나 사용을 추천하지 않습니다.">지원 중단 예정</abbr>. [여기](#범위가-있는-슬롯(Scoped-Slots))에서 권장되는 새 문법을 확인하세요.
+> 2.6.0+ 부터 <abbr title="모든 Vue 2.x 버전에서 지원되고 있으나 사용을 추천하지 않습니다.">지원 중단 예정</abbr>. [여기](#범위가-있는-슬롯-Scoped-Slots)에서 권장되는 새 문법을 확인하세요.
 
-슬롯으로 전달된 속성들을 받기 위해서 부모 컴포넌트는 `slot-scope` 인수와 함께 `<template>`을 사용할 수 있습니다.([여기](#범위가-있는-슬롯(Scoped-Slots))에서 예시로 사용했던 `<slot-example>` 컴포넌트를 사용하겠습니다.)
+슬롯으로 전달된 속성들을 받기 위해서 부모 컴포넌트는 `slot-scope` 인수와 함께 `<template>`을 사용할 수 있습니다.([여기](#범위가-있는-슬롯-Scoped-Slots)에서 예시로 사용했던 `<slot-example>` 컴포넌트를 사용하겠습니다.)
 
 ``` html
 <slot-example>
@@ -548,7 +548,7 @@ function (slotProps) {
 </slot-example>
 ```
 
-아래는 [여기](#다른-사례들(Other-Examples))에서 사례로 설명한 `<todo-list>`와 똑같은 사례입니다.
+아래는 [여기](#다른-사례들-Other-Examples)에서 사례로 설명한 `<todo-list>`와 똑같은 사례입니다.
 
 ``` html
 <todo-list v-bind:todos="todos">

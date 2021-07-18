@@ -6,10 +6,10 @@ order: 10
 
 ## 기본 사용법
 
-`v-model` 디렉티브를 사용하여 폼 input과 textarea 엘리먼트에 양방향 데이터 바인딩을 생성할 수 있습니다. 입력 유형에 따라 엘리먼트를 업데이트 하는 올바른 방법을 자동으로 선택합니다. 약간 이상하지만 `v-model`은 기본적으로 사용자 입력 이벤트에 대한 데이터를 업데이트하는 "syntax sugar"이며 일부 경우에 특별한 주의를 해야합니다.
+`v-model` 디렉티브를 사용하여 폼 input과 textarea 엘리먼트에 양방향 데이터 바인딩을 생성할 수 있습니다. 입력 유형에 따라 엘리먼트를 업데이트 하는 올바른 방법을 자동으로 선택합니다. 약간 이상하지만 `v-model`은 기본적으로 사용자 입력 이벤트에 대한 데이터를 업데이트하는 "편의 문법(syntax sugar)"이며 일부 경우에 특별한 주의를 해야합니다.
 
 <p class="tip">
-`v-model`은 모든 form 엘리먼트의 초기 `value`와 `checked` 그리고 `selected` 속성을 무시합니다. 항상 Vue 인스턴스 데이터를 원본 소스로 취급합니다. 컴포넌트의 `data` 옵션 안에 있는 JavaScript에서 초기값을 선언해야합니다.
+<code>v-model</code>은 모든 form 엘리먼트의 초기 <code>value</code>와 <code>checked</code> 그리고 <code>selected</code> 속성을 무시합니다. 항상 Vue 인스턴스 데이터를 원본 소스로 취급합니다. 컴포넌트의 <code>data</code> 옵션 안에 있는 JavaScript에서 초기값을 선언해야합니다.
 </p>
 
 `v-model`은 내부적으로 서로 다른 속성을 사용하고 서로 다른 입력 요소에 대해 서로 다른 이벤트를 전송합니다 : 
@@ -17,7 +17,7 @@ order: 10
 - 체크박스들과 라디오버튼들은 `checked` 속성과 `change` 이벤트를 사용합니다.
 - Select 태그는 `value`를 prop으로, `change`를 이벤트로 사용합니다.
 
-<p class="tip" id="vmodel-ime-tip">[IME](https://en.wikipedia.org/wiki/Input_method) (중국어, 일본어, 한국어 등)가 필요한 언어의 경우 IME 중 `v-model`이 업데이트 되지 않습니다. 이러한 업데이트를 처리하려면 `input` 이벤트를 대신 사용하십시오.</p>
+<p class="tip" id="vmodel-ime-tip"><a href="https://en.wikipedia.org/wiki/Input_method">IME</a> (중국어, 일본어, 한국어 등)가 필요한 언어의 경우 IME 중 <code>v-model</code>이 업데이트 되지 않습니다. 이러한 업데이트를 처리하려면 <code>input</code> 이벤트를 대신 사용하십시오.</p>
 
 ### 문자열
 
@@ -211,7 +211,7 @@ new Vue({
 </script>
 {% endraw %}
 
-<p class="tip">`v-model` 표현식의 초기 값이 어떤 옵션에도 없으면, `&lt;select&gt;` 엘리먼트는 "선택없음" 상태로 렌더링됩니다. iOS에서는 이 경우 변경 이벤트가 발생하지 않아 사용자가 첫 번째 항목을 선택할 수 없게됩니다. 따라서 위 예제처럼 사용하지 않는 옵션에 빈 값을 넣는 것이 좋습니다.</p>
+<p class="tip"><code>v-model</code> 표현식의 초기 값이 어떤 옵션에도 없으면, <code>&lt;select&gt;</code> 엘리먼트는 "선택없음" 상태로 렌더링됩니다. iOS에서는 이 경우 변경 이벤트가 발생하지 않아 사용자가 첫 번째 항목을 선택할 수 없게됩니다. 따라서 위 예제처럼 사용하지 않는 옵션에 빈 값을 넣는 것이 좋습니다.</p>
 
 다중 셀렉트 (배열을 바인딩 합니다):
 
@@ -329,7 +329,7 @@ vm.toggle === 'yes'
 vm.toggle === 'no'
 ```
 
-<p class="tip">`true-value` 와 `false-value` 속성은 폼 전송시 체크되지 않은 박스를 포함하지 않기 때문에 입력의 `value` 속성에 영향을 미치지 않습니다. 두 값 중 하나가 폼을 통해 전송 되려면 (예 : '예' 또는 '아니요') 라디오를 대신 사용하십시오.</p>
+<p class="tip"><code>true-value</code> 와 <code>false-value</code> 속성은 폼 전송시 체크되지 않은 박스를 포함하지 않기 때문에 입력의 <code>value</code> 속성에 영향을 미치지 않습니다. 두 값 중 하나가 폼을 통해 전송 되려면 (예 : '예' 또는 '아니요') 라디오를 대신 사용하십시오.</p>
 
 ### 라디오
 

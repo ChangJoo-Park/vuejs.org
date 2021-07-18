@@ -173,7 +173,7 @@ new Vue({
 
 차이점은 `v-show`가 있는 엘리먼트는 항상 렌더링 되고 DOM에 남아있다는 점입니다. `v-show`는 단순히 엘리먼트에 `display` CSS 속성을 토글합니다.
 
-<p class="tip">`v-show`는 `<template>` 구문을 지원하지 않으며 `v-else`와도 작동하지 않습니다.</p>
+<p class="tip"><code>v-show</code>는 <code>&lt;template&gt;</code> 구문을 지원하지 않으며 <code>v-else</code>와도 작동하지 않습니다.</p>
 
 ## `v-if` vs `v-show`
 
@@ -187,6 +187,6 @@ new Vue({
 
 ## `v-if` 와 `v-for`
 
-<p class="tip">`v-if`와 `v-for`을 함께 사용하는 것을 권장하지 않습니다. 자세한 내용은[style guide](/v2/style-guide/#Avoid-v-if-with-v-for-essential)을 확인하십시오.</p>
+<p class="tip"><code>v-if</code>와 <code>v-for</code>을 함께 사용하는 것을 권장하지 않습니다. 자세한 내용은 <a href="/v2/style-guide/#v-if와-v-for를-동시에-사용하지-마세요-필수">스타일 가이드</a>을 확인하십시오.</p>
 
 `v-if`와 함께 사용하는 경우, `v-for`는  `v-if`보다 높은 우선순위를 갖습니다. 자세한 내용은 <a href="../guide/list.html#v-for-with-v-if">리스트 렌더링 가이드</a>를 확인하십시오.

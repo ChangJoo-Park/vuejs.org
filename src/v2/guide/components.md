@@ -32,7 +32,7 @@ Vue.component('my-component', {
 })
 ```
 
-<p class="tip">Vue는 사용자 지정 태그 이름에 대해 [W3C 규칙](http://www.w3.org/TR/custom-elements/#concepts)을 적용하지 않습니다 (모두 소문자이어야 하고 하이픈을 포함해야합니다). 그러나 이 규칙을 따르는 것이 좋습니다.</p>
+<p class="tip">Vue는 사용자 지정 태그 이름에 대해 <a href="http://www.w3.org/TR/custom-elements/#concepts">W3C 규칙</a>을 적용하지 않습니다 (모두 소문자이어야 하고 하이픈을 포함해야합니다). 그러나 이 규칙을 따르는 것이 좋습니다.</p>
 
 일단 등록되면, 컴포넌트는 인스턴스의 템플릿에서 커스텀 엘리먼트,`<my-component></my-component>`로 사용할 수 있습니다. 루트 Vue 인스턴스를 인스턴스화하기 **전에** 컴포넌트가 등록되어 있는지 확인하십시오. 전체 예제는 다음과 같습니다.
 
@@ -403,7 +403,7 @@ todo: {
   }
   ```
 
-<p class="tip">자바 스크립트의 객체와 배열은 참조로 전달되므로 prop가 배열이나 객체인 경우 하위 객체 또는 배열 자체를 부모 상태로 변경하면 부모 상태에 **영향을 줍니다**.</p>
+<p class="tip">자바 스크립트의 객체와 배열은 참조로 전달되므로 prop가 배열이나 객체인 경우 하위 객체 또는 배열 자체를 부모 상태로 변경하면 부모 상태에 <strong>영향을 줍니다</strong>.</p>
 
 ### Prop 검증
 
@@ -506,12 +506,12 @@ Props가 아닌 속성은 컴포넌트로 전달되지만 해당 props는 정의
 - `$on(eventName)`을 사용하여 이벤트를 감지 하십시오.
 - `$emit(eventName)`을 사용하여 이벤트를 트리거 하십시오.
 
-<p class="tip">Vue의 이벤트 시스템은 브라우저의 [EventTarget API](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)와 별개입니다. 비슷하게 작동하지만 `$on` 과 `$emit` 는 `addEventListener` 와 `dispatchEvent`의 별칭이 __아닙니다__.</p>
+<p class="tip">Vue의 이벤트 시스템은 브라우저의 <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget">EventTarget API</a>와 별개입니다. 비슷하게 작동하지만 <code>$on</code> 과 <code>$emit</code> 는 <code>addEventListener</code> 와 <code>dispatchEvent</code>의 별칭이 <u>아닙니다</u>.</p>
 
 또한, 부모 컴포넌트는 자식 컴포넌트가 사용되는 템플릿에서 직접 `v-on` 을 사용하여 자식 컴포넌트에서 보내진 이벤트를 청취할 수 있습니다.
 
 
-<p class="tip">`$on`은 자식에서 호출한 이벤트는 감지하지 않습니다. `v-on`을 템플릿에 반드시 지정해야 합니다. 아래의 예제를 보십시오.</p>
+<p class="tip"><code>$on</code>은 자식에서 호출한 이벤트는 감지하지 않습니다. <code>v-on</code>을 템플릿에 반드시 지정해야 합니다. 아래의 예제를 보십시오.</p>
 
 예제:
 
@@ -781,7 +781,7 @@ Vue.component('my-checkbox', {
 </my-checkbox>
 ```
 
-<p class="tip">`checked` prop를 명시적으로 선언해야 합니다.</p>
+<p class="tip"><code>checked</code> prop를 명시적으로 선언해야 합니다.</p>
 
 ### 비 부모-자식간 통신
 
@@ -1134,7 +1134,7 @@ var child = parent.$refs.profile
 
 `ref`가 `v-for`와 함께 사용될 때, 얻을 수 있는 ref는 데이터 소스를 미러링하는 자식 컴포넌트를 포함하는 배열이 될 것입니다.
 
-<p class="tip">`$refs` 는 컴포넌트가 렌더링 된 후에만 채워지며 반응적이지 않습니다. 그것은 직접 자식 조작을 위한 escape 해치를 의미합니다 - 템플릿이나 계산 된 속성에서 `$refs`를 사용하지 말아야합니다.</p>
+<p class="tip"><code>$refs</code> 는 컴포넌트가 렌더링 된 후에만 채워지며 반응적이지 않습니다. 그것은 직접 자식 조작을 위한 escape 해치를 의미합니다 - 템플릿이나 계산 된 속성에서 <code>$refs</code>를 사용하지 말아야합니다.</p>
 
 ### 비동기 컴포넌트
 
@@ -1183,7 +1183,7 @@ new Vue({
 })
 ```
 
-<p class="tip">비동기 컴포넌트를 사용하려는 <strong>Browserify</strong> 사용자인 경우, 작성자는 불행히도 비동기로드가 Browserify에서 지원하지 않는 것이라고 [분명하게 주장합니다.](https://github.com/substack/node-browserify/issues/58#issuecomment-21978224) 적어도 공식적으로. Browserify 커뮤니티는 기존 및 복잡한 응용 프로그램에 도움이 될 수있는 [몇 가지 해결 방법](https://github.com/vuejs/vuejs.org/issues/620)을 발견했습니다. 다른 모든 시나리오의 경우 기본 제공되는 비동기식 지원을 위해 Webpack을 사용하는 것이 좋습니다.</p>
+<p class="tip">비동기 컴포넌트를 사용하려는 <strong>Browserify</strong> 사용자인 경우, 작성자는 불행히도 비동기로드가 Browserify에서 지원하지 않는 것이라고 <a href="https://github.com/substack/node-browserify/issues/58#issuecomment-21978224">분명하게 주장합니다.</a> 적어도 공식적으로. Browserify 커뮤니티는 기존 및 복잡한 응용 프로그램에 도움이 될 수있는 <a href="https://github.com/vuejs/vuejs.org/issues/620">몇 가지 해결 방법</a>을 발견했습니다. 다른 모든 시나리오의 경우 기본 제공되는 비동기식 지원을 위해 Webpack을 사용하는 것이 좋습니다.</p>
 
 ### 고급 비동기 컴포넌트
 
